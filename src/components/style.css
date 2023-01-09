@@ -91,7 +91,7 @@ body{
     margin:0 auto;
     margin-top:25px;
     display: grid;
-    grid-template-columns: repeat(4,minmax(200px, 0.5fr));
+    grid-template-columns: repeat(auto-fit,minmax(200px, 0.5fr));
     grid-gap:20px;
     box-sizing: border-box;
 }
@@ -104,6 +104,10 @@ body{
     transition: .5s;
     text-align: center;
     position:  relative;
+}
+.card:hover{
+    transform: scale(0.9);
+    background-color: rgba(255, green, blue, 0.8);
 }
 .card img {
     margin: 1rem 0rem;
